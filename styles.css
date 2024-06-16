@@ -267,12 +267,13 @@ select {
 /* Home */
 
 #home {
-  min-height: 80vh;
+  height: 80vh;
   display: flex;
   max-width: 80%;
   margin: auto;
   justify-content: center;
   align-items: center;
+  padding: 50px 0;
 }
 .introduction-content {
   display: flex;
@@ -308,16 +309,22 @@ select {
   color: var(--color-primary);
 }
 
+.social-li {
+  padding: 20px;
+  font-size: 32px;
+}
+
 /* Skills */
 
 #skills {
-  min-height: 80vh;
-
+  min-height: 90vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills-content {
   min-height: 100%;
-
 }
 
 .skills-container {
@@ -367,7 +374,12 @@ select {
 /* Projects */
 
 #projects {
-  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  margin: 50px auto;
+  padding: 100px 0;
 }
 
 .project-content {
@@ -538,6 +550,7 @@ ion-icon {
 
 footer {
   text-align: center;
+  padding: 50px;
 }
 
 /* Media Q */
@@ -555,11 +568,26 @@ footer {
     margin: auto;
   }
 
+  .introduction-name,
+  .introduction-title {
+    text-align: center;
+  }
+
+  .social-ul {
+    display: none;
+  }
+
   .nav-ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+  }
+
+  .nav-li {
+    width: 100%;
+    text-align: center;
   }
   #main {
     display: block;
@@ -594,5 +622,9 @@ footer {
     max-width: 50%;
     padding: 10px;
     margin: auto;
+  }
+
+  .contact-form {
+    display: none;
   }
 }
