@@ -201,11 +201,12 @@ h4 {
 .header-container {
   min-width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: auto;
   padding: 25px;
   background: var(--bg-primary);
+  border-radius: 40px;
 }
 
 .nav-ul {
@@ -267,7 +268,7 @@ select {
 /* Home */
 
 #home {
-  height: 80vh;
+  min-height: 90vh;
   display: flex;
   max-width: 80%;
   margin: auto;
@@ -291,7 +292,7 @@ select {
 
 #about {
   display: inline-flex;
-  min-height: 80vh;
+  min-height: 90vh;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -359,6 +360,15 @@ select {
 .skill-card,
 .tool-card {
   padding: 30px;
+  filter: grayscale();
+  transition: 500ms ease-in-out;
+}
+
+.skill-card:hover,
+.tool-card:hover {
+  padding: 30px;
+  filter: none;
+  transition: 500ms ease-in-out;
 }
 
 .skill-icon-box,
@@ -407,6 +417,15 @@ select {
 figure img {
   max-width: 100%;
   min-height: 20%;
+  filter: grayscale();
+  transition: 500ms ease-in-out;
+}
+
+figure img:hover {
+  max-width: 100%;
+  min-height: 20%;
+  filter: none;
+  transition: 500ms ease-in-out;
 }
 
 figcaption {
@@ -436,7 +455,7 @@ figcaption {
 /* Contact */
 
 #contact {
-  min-height: 80vh;
+  max-height: 90vh;
   width: 100%;
 }
 
